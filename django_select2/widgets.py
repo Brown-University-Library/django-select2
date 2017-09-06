@@ -190,7 +190,7 @@ class Select2Mixin(object):
         js += '$(hashedSelector).select2(%s);' % (options)
         return js
 
-    def render(self, name, value, attrs=None, choices=()):
+    def render(self, name, value, attrs=None, choices=(), **kwargs):
         """
         Renders this widget. HTML and JS code blocks all are rendered by this.
 
